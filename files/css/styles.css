@@ -1,0 +1,55 @@
+#auroraCard{
+	margin-left: 0%;
+	position: absolute;
+}
+
+#grandCanyonCard{
+	margin-left: 1%;
+	position: absolute;
+}
+
+#greatBarrierReefCard{
+	margin-left: 2%;
+	position: absolute;
+}
+
+#guanabaraBayCard{
+	margin-left: 3%;
+	position: absolute;
+}
+
+#mountEverestCard{
+	margin-left: 4%;
+	position: absolute;
+}
+
+#paricutinCard{
+	margin-left: 5%;
+	position: absolute;
+}
+
+#victoriaFallsCard{
+	margin-left: 6%;
+	position: absolute;
+}
+
+div.container{
+  text-align: center;
+  padding: 10px 20px;
+}
+
+div.polaroid{
+  width: 25%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+.middle{
+	left: 50%;
+	margin: 0;
+	-ms-transform: translate(-50%, -50%);
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
