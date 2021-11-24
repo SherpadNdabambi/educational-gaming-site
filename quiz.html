@@ -13,13 +13,21 @@
 
 	<div style="text-align: center;">
 		
-		<h1> Seven Natural Wonders of the World Quiz </h1>
+		<h1>Seven Natural Wonders of the World Quiz</h1>
+
+		<div class="scoreboard">
+			
+			SCORE: <span id="score">0</span>
+
+		</div>
+
+		<p>You get more points for consecutively correct answers</p>
 
 	</div>
 
-	<div id="auroraCard" class="flip-card">
+	<div class="flip-card">
 
-		<div class="flip-card-inner">
+		<div id="auroraCard" class="flip-card-inner">
 
 			<div class="flip-card-front">
 
@@ -37,34 +45,34 @@
 							</tr>
 							<tr>
 								<td>
-									<br><input type="radio" id="qA">
+									<br> A.
 								</td>
 
-								<td class="answerCell">
-									<br>Auroras are caused by reflection, refraction and dispersion of light in water droplets resulting in a spectrum of 			light appearing in the sky.
+								<td class="answerCell" onclick="cross()">
+									<br>Auroras are caused by reflection, refraction and dispersion of light in water droplets resulting in a spectrum of light appearing in the sky.
 								</td>
 							</tr>
 							<tr>
 								<td>
-									<br><input type="radio" id="qB">
+									<br> B.
 								</td>
-								<td class="answerCell">
+								<td class="answerCell" onclick="tick()">
 									<br>Auroras are created when charged particles from the sun strike the upper atmosphere and excite atoms in the atmosphere, which then emit light of varying colour.
 								</td>
 							</tr>
 							<tr>
 								<td>
-									<br><input type="radio" id="qC">
+									<br> C.
 								</td>
-								<td class="answerCell">
+								<td class="answerCell" onclick="cross()">
 									<br>Auroras are a result of diffraction of light which occurs when light from the sun bends around the clouds.
 								</td>
 							</tr>
 							<tr>
 								<td>
-									<br><input type="radio" id="qD">
+									<br> D.
 								</td>
-								<td class="answerCell">
+								<td class="answerCell" onclick="cross()">
 									<br>Auroras are optical illusions caused by smoke coming from bushfires.
 								</td>
 							</tr>
@@ -86,9 +94,9 @@
 	
 	</div>
 
-	<div id="grandCanyonCard" class="flip-card">
+	<div class="flip-card">
 
-		<div class="flip-card-inner">
+		<div id="grandCanyonCard" class="flip-card-inner">
 
 			<div class="flip-card-front">
 
@@ -106,34 +114,34 @@
 							</tr>
 							<tr>
 								<td>
-									<br><input type="radio" id="qA">
+									<br> A.
 								</td>
 
-								<td class="answerCell">
+								<td class="answerCell" onclick="cross()">
 									<br>Mississippi River
 								</td>
 							</tr>
 							<tr>
 								<td>
-									<br><input type="radio" id="qB">
+									<br> B.
 								</td>
-								<td class="answerCell">
+								<td class="answerCell" onclick="tick()">
 									<br>Colorado River
 								</td>
 							</tr>
 							<tr>
 								<td>
-									<br><input type="radio" id="qC">
+									<br> C.
 								</td>
-								<td class="answerCell">
+								<td class="answerCell" onclick="cross()">
 									<br>The Gulf of Mexico
 								</td>
 							</tr>
 							<tr>
 								<td>
-									<br><input type="radio" id="qD">
+									<br> D.
 								</td>
-								<td class="answerCell">
+								<td class="answerCell" onclick="cross()">
 									<br>None. It was carved by sculptors
 								</td>
 						
@@ -149,7 +157,11 @@
 
 			<div class="flip-card-back">
 
-				<img src="files/img/card-back.jpg" alt="Seven Natural Wonders of the World">
+				<div class="polaroid">
+
+					<img src="files/img/card-back.jpg" alt="Seven Natural Wonders of the World">
+
+				</div>
 
 			</div>
 
@@ -157,9 +169,9 @@
 	
 	</div>
 
-	<div id="greatBarrierReefCard" class="flip-card">
+	<div class="flip-card">
 
-		<div class="flip-card-inner">
+		<div id="greatBarrierReefCard" class="flip-card-inner">
 
 			<div class="flip-card-front">
 
@@ -177,34 +189,34 @@
 							</tr>
 							<tr>
 								<td>
-									<br><input type="radio" id="qA">
+									<br> A.
 								</td>
 
-								<td class="answerCell">
+								<td class="answerCell" onclick="tick()">
 									<br>1997
 								</td>
 							</tr>
 							<tr>
 								<td>
-									<br><input type="radio" id="qB">
+									<br> B.
 								</td>
-								<td class="answerCell">
+								<td class="answerCell" onclick="cross()">
 									<br>2006
 								</td>
 							</tr>
 							<tr>
 								<td>
-									<br><input type="radio" id="qC">
+									<br> C.
 								</td>
-								<td class="answerCell">
+								<td class="answerCell" onclick="cross()">
 									<br>1846
 								</td>
 							</tr>
 							<tr>
 								<td>
-									<br><input type="radio" id="qD">
+									<br> D.
 								</td>
-								<td class="answerCell">
+								<td class="answerCell" onclick="cross()">
 									<br>2011
 								</td>
 						
@@ -220,7 +232,11 @@
 
 			<div class="flip-card-back">
 
-				<img src="files/img/card-back.jpg" alt="Seven Natural Wonders of the World">
+				<div class="polaroid">
+
+					<img src="files/img/card-back.jpg" alt="Seven Natural Wonders of the World">
+
+				</div>
 
 			</div>
 
@@ -228,9 +244,9 @@
 	
 	</div>
 
-	<div id="guanabaraBayCard" class="flip-card">
+	<div class="flip-card">
 
-		<div class="flip-card-inner">
+		<div id="guanabaraBayCard" class="flip-card-inner">
 
 			<div class="flip-card-front">
 
@@ -248,34 +264,34 @@
 							</tr>
 							<tr>
 								<td>
-									<br><input type="radio" id="qA">
+									<br> A.
 								</td>
 
-								<td class="answerCell">
+								<td class="answerCell" onclick="tick()">
 									<br>412 km<sup>2</sup>
 								</td>
 							</tr>
 							<tr>
 								<td>
-									<br><input type="radio" id="qB">
+									<br> B.
 								</td>
-								<td class="answerCell">
+								<td class="answerCell" onclick="cross()">
 									<br>2770 km<sup>2</sup>
 								</td>
 							</tr>
 							<tr>
 								<td>
-									<br><input type="radio" id="qC">
+									<br> C.
 								</td>
-								<td class="answerCell">
+								<td class="answerCell" onclick="cross()">
 									<br>1540 km<sup>2</sup>
 								</td>
 							</tr>
 							<tr>
 								<td>
-									<br><input type="radio" id="qD">
+									<br> D.
 								</td>
-								<td class="answerCell">
+								<td class="answerCell" onclick="cross()">
 									<br>663 km<sup>2</sup>
 								</td>
 						
@@ -291,7 +307,11 @@
 
 			<div class="flip-card-back">
 
-				<img src="files/img/card-back.jpg" alt="Seven Natural Wonders of the World">
+				<div class="polaroid">
+
+					<img src="files/img/card-back.jpg" alt="Seven Natural Wonders of the World">
+
+				</div>
 
 			</div>
 
@@ -299,9 +319,9 @@
 	
 	</div>
 
-	<div id="mountEverestCard" class="flip-card">
+	<div class="flip-card">
 
-		<div class="flip-card-inner">
+		<div id="mountEverestCard" class="flip-card-inner">
 
 			<div class="flip-card-front">
 
@@ -319,34 +339,34 @@
 							</tr>
 							<tr>
 								<td>
-									<br><input type="radio" id="qA">
+									<br> A.
 								</td>
 
-								<td class="answerCell">
+								<td class="answerCell" onclick="cross()">
 									<br>the Rocky Mountains
 								</td>
 							</tr>
 							<tr>
 								<td>
-									<br><input type="radio" id="qB">
+									<br> B.
 								</td>
-								<td class="answerCell">
+								<td class="answerCell" onclick="cross()">
 									<br>the Alps
 								</td>
 							</tr>
 							<tr>
 								<td>
-									<br><input type="radio" id="qC">
+									<br> C.
 								</td>
-								<td class="answerCell">
+								<td class="answerCell" onclick="cross()">
 									<br>the Andes
 								</td>
 							</tr>
 							<tr>
 								<td>
-									<br><input type="radio" id="qD">
+									<br> D.
 								</td>
-								<td class="answerCell">
+								<td class="answerCell" onclick="tick()">
 									<br>the Himalayas
 								</td>
 						
@@ -362,7 +382,11 @@
 
 			<div class="flip-card-back">
 
-				<img src="files/img/card-back.jpg" alt="Seven Natural Wonders of the World">
+				<div class="polaroid">
+
+					<img src="files/img/card-back.jpg" alt="Seven Natural Wonders of the World">
+
+				</div>
 
 			</div>
 
@@ -370,9 +394,9 @@
 	
 	</div>
 
-	<div id="paricutinCard" class="flip-card">
+	<div class="flip-card">
 
-		<div class="flip-card-inner">
+		<div id="paricutinCard" class="flip-card-inner">
 
 			<div class="flip-card-front">
 
@@ -390,34 +414,34 @@
 							</tr>
 							<tr>
 								<td>
-									<br><input type="radio" id="qA">
+									<br> A.
 								</td>
 
-								<td class="answerCell">
+								<td class="answerCell" onclick="cross()">
 									<br>composite
 								</td>
 							</tr>
 							<tr>
 								<td>
-									<br><input type="radio" id="qB">
+									<br> B.
 								</td>
-								<td class="answerCell">
+								<td class="answerCell" onclick="cross()">
 									<br>shield
 								</td>
 							</tr>
 							<tr>
 								<td>
-									<br><input type="radio" id="qC">
+									<br> C.
 								</td>
-								<td class="answerCell">
+								<td class="answerCell" onclick="tick()">
 									<br>cinder cone
 								</td>
 							</tr>
 							<tr>
 								<td>
-									<br><input type="radio" id="qD">
+									<br> D.
 								</td>
-								<td class="answerCell">
+								<td class="answerCell" onclick="cross()">
 									<br>lava dome
 								</td>
 						
@@ -433,7 +457,11 @@
 
 			<div class="flip-card-back">
 
-				<img src="files/img/card-back.jpg" alt="Seven Natural Wonders of the World">
+				<div class="polaroid">
+
+					<img src="files/img/card-back.jpg" alt="Seven Natural Wonders of the World">
+
+				</div>
 
 			</div>
 
@@ -441,9 +469,9 @@
 	
 	</div>
 
-	<div id="victoriaFallsCard" class="flip-card">
+	<div class="flip-card">
 
-		<div class="flip-card-inner">
+		<div id="victoriaFallsCard" class="flip-card-inner">
 
 			<div class="flip-card-front">
 
@@ -461,34 +489,34 @@
 							</tr>
 							<tr>
 								<td>
-									<br><input type="radio" id="qA">
+									<br> A.
 								</td>
 
-								<td class="answerCell">
+								<td class="answerCell" onclick="cross()">
 									<br>Christopher Columbus
 								</td>
 							</tr>
 							<tr>
 								<td>
-									<br><input type="radio" id="qB">
+									<br> B.
 								</td>
-								<td class="answerCell">
+								<td class="answerCell" onclick="cross()">
 									<br>Ferdinand Magellan
 								</td>
 							</tr>
 							<tr>
 								<td>
-									<br><input type="radio" id="qC">
+									<br> C.
 								</td>
-								<td class="answerCell">
+								<td class="answerCell" onclick="cross()">
 									<br>Marco Polo
 								</td>
 							</tr>
 							<tr>
 								<td>
-									<br><input type="radio" id="qD">
+									<br> D.
 								</td>
-								<td class="answerCell">
+								<td class="answerCell" onclick="tick()">
 									<br>David Livingstone
 								</td>
 						
@@ -504,7 +532,11 @@
 
 			<div class="flip-card-back">
 
-				<img src="files/img/card-back.jpg" alt="Seven Natural Wonders of the World">
+				<div class="polaroid">
+
+					<img src="files/img/card-back.jpg" alt="Seven Natural Wonders of the World">
+
+				</div>
 
 			</div>
 
@@ -512,7 +544,7 @@
 	
 	</div>
 
-	<button class="align-middle" onclick="startQuiz()">Start Quiz</button>
+	<button class="align-middle" onclick="nextQuestion(); this.style.display='none';">Start Quiz</button>
 	
 	<script type="text/javascript" src="files/js/quiz.js"></script>
 
