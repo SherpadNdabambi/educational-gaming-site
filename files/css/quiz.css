@@ -1,0 +1,80 @@
+#auroraCard{
+	margin-left: 0%;
+}
+
+#grandCanyonCard{
+	margin-left: 1%;
+}
+
+#greatBarrierReefCard{
+	margin-left: 2%;
+}
+
+#guanabaraBayCard{
+	margin-left: 3%;
+}
+
+#mountEverestCard{
+	margin-left: 4%;
+}
+
+#paricutinCard{
+	margin-left: 5%;
+}
+
+#victoriaFallsCard{
+	margin-left: 6%;
+}
+
+div.container{
+	height: 350px;
+	padding: 10px 20px;
+	text-align: center;
+}
+
+div.flip-card{
+	height: 880px;
+  position: absolute;
+	width: 530px;
+}
+
+/*This container is needed to position the front and back side*/
+div.flip-card-inner{
+	position: relative;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+
+/*Do an horizontal flip when you move the mouse over the flip box container*/
+.flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/*Position the front and back side*/
+.flip-card-back, .flip-card-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/*Style the back side*/
+.flip-card-front {
+  transform: rotateY(180deg);
+}
+
+div.polaroid{
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+td.answerCell{
+	text-align: left;
+}
+
+td.questionCell{
+	column-span: 2;
+	height: 150px;
+}
