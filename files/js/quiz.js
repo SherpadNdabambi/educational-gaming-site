@@ -74,9 +74,10 @@ function replaceCards(){
 }
 
 function resetQuiz(){
-	usedCards = [];
+	multiplier = 1;
 	replaceCards();
 	score.innerHTML = 0;
+	usedCards = [];
 	homeButton.style.display = "block";
 	resetButton.style.display = "none";
 	startButton.style.display = "block";
