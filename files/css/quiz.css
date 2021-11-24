@@ -35,6 +35,7 @@ div.container{
 div.flip-card{
 	height: 880px;
   position: absolute;
+  top: 150px;
 	width: 530px;
 }
 
@@ -43,11 +44,6 @@ div.flip-card-inner{
 	position: relative;
 	transition: transform 0.8s;
 	transform-style: preserve-3d;
-}
-
-/*Do an horizontal flip when you move the mouse over the flip box container*/
-.flip-card-inner {
-  transform: rotateY(180deg);
 }
 
 /*Position the front and back side*/
@@ -72,6 +68,11 @@ div.polaroid{
 
 td.answerCell{
 	text-align: left;
+}
+
+td.answerCell:hover{
+	color: grey;
+	cursor: pointer;
 }
 
 td.questionCell{
