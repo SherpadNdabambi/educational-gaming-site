@@ -15,6 +15,11 @@ function getInt(value){
 	return parseInt(value.replace("px", ''));
 }
 
+function hideButtons(){
+	buttons = document.getElementsByTagName("button");
+	for(let i = 0; i < buttons.length; i++) buttons[i].style.display = "none";
+}
+
 function moveCard(card){
 	let id = null, startPos = getInt(card.style.left), position = startPos;
 	clearInterval(id);
@@ -37,12 +42,55 @@ function moveCard(card){
 }
 
 function nextQuestion(){
-	if(usedCards.length == 7) return;
+	if(usedCards.length == 7){
+		showResetButton();
+		return;
+	}
 	let index = Math.floor(Math.random() * 7);
 	while(usedCards.includes(index)) index = Math.floor(Math.random() * 7);
 	usedCards.push(index);
 	selectedCard = cards[index];
 	moveCard(selectedCard);
+}
+
+function replace(card){
+	let id = null, startPos = getInt(card.style.left), position = startPos;
+	clearInterval(id);
+	id = setInterval(frame, 5);
+	function frame(){
+		if(position == startPos - 700){
+			clearInterval(id);
+		}
+		else{
+			position -= 10;
+			card.style.left = position + "px";
+		}
+	}
+}
+
+function replaceCards(){
+	cards = document.getElementsByClassName("flip-card-inner");
+	for(let i = 0; i < cards.length; i++) replace(cards[i]);
+}
+
+function resetQuiz(){
+	usedCards = [];
+	replaceCards();
+	score.innerHTML = 0;
+	homeButton.style.display = "block";
+	resetButton.style.display = "none";
+	startButton.style.display = "block";
+}
+
+function showResetButton(){
+	homeButton.style.display = "block";
+	resetButton.style.display = "block";
+	buttonContainer.style.zIndex = 3;
+}
+
+function startQuiz(){
+	nextQuestion();
+	hideButtons();
 }
 
 function tick(){

@@ -544,7 +544,15 @@
 	
 	</div>
 
-	<button class="align-middle" onclick="nextQuestion(); this.style.display='none';">Start Quiz</button>
+	<div  id="buttonContainer" class="align-middle" style="text-align: center;">
+
+		<button id="startButton" onclick="startQuiz();">Start Quiz</button><br>
+
+		<button id="resetButton" onclick="resetQuiz();" style="display: none;">Reset Quiz</button>
+
+		<a href="index.html"> <button id="homeButton">Homepage</button> </a>
+
+	</div>
 	
 	<script type="text/javascript" src="files/js/quiz.js"></script>
 
