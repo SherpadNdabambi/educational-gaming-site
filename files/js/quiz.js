@@ -26,8 +26,11 @@ function moveCard(card){
 		if(position == startPos + 350){
 			clearInterval(id);
 			card.style.zIndex = 1;
+<<<<<<< HEAD
 			if(position > 350) setTimeout(nextQuestion(), 500);
 			else card.style.zIndex++;
+=======
+>>>>>>> 5fac3c26179edd350d060444d9c5696161fe32c0
 		}
 		else{
 			position += 5;
@@ -36,8 +39,12 @@ function moveCard(card){
 	}
 }
 
+<<<<<<< HEAD
 function nextQuestion(){
 	if(usedCards.length == 7) return;
+=======
+function startQuiz(){
+>>>>>>> 5fac3c26179edd350d060444d9c5696161fe32c0
 	let index = Math.floor(Math.random() * 7);
 	while(usedCards.includes(index)) index = Math.floor(Math.random() * 7);
 	usedCards.push(index);
