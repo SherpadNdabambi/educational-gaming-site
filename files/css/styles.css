@@ -7,6 +7,10 @@
 	transform: translate(-50%, -50%);
 }
 
+body{
+	background-color: turquoise;
+}
+
 button{
 	background-color: red;
 	border: none;
@@ -17,4 +21,8 @@ button{
 	margin: 4px 2px;
 	padding: 20px;
 	text-align: center;
+}
+
+input{
+	background-color: paleturquoise;
 }
