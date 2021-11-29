@@ -1,4 +1,4 @@
-let cards = [auroraCard, grandCanyonCard, greatBarrierReefCard, guanabaraBayCard, mountEverestCard, paricutinCard, victoriaFallsCard], usedCards = [], multiplier = 1, selectedCard;
+let cards = [auroraCard, grandCanyonCard, greatBarrierReefCard, guanabaraBayCard, mountEverestCard, paricutinCard, victoriaFallsCard], multiplier = 1, replacedCards = [], selectedCard, usedCards = [];
 
 function cross(){
 	moveCard(selectedCard);
@@ -53,24 +53,24 @@ function nextQuestion(){
 	moveCard(selectedCard);
 }
 
-function replace(card){
-	let id = null, startPos = getInt(card.style.left), position = startPos;
+function replace(i){
+	let id = null, startPos = getInt(cards[i].style.left), position = startPos;
 	clearInterval(id);
 	id = setInterval(frame, 5);
 	function frame(){
 		if(position == startPos - 700){
 			clearInterval(id);
+			if(i < 7) replace(--i);
 		}
 		else{
 			position -= 10;
-			card.style.left = position + "px";
+			cards[i].style.left = position + "px";
 		}
 	}
 }
 
 function replaceCards(){
-	cards = document.getElementsByClassName("flip-card-inner");
-	for(let i = 0; i < cards.length; i++) replace(cards[i]);
+	replace(6);
 }
 
 function resetQuiz(){
