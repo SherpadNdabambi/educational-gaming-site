@@ -2,7 +2,7 @@
 
 <head>
 
-	<title>Educational Gaming Website</title>
+	<title>Educational Gaming Site</title>
 	
 	<link rel="stylesheet" type="text/css" href="files/css/styles.css">
 
@@ -15,17 +15,16 @@
 		<h1> Educational Gaming </h1>
 		Welcome! Test your knowledge of Mother Nature with a fun quiz or enter a number range below. <br>
 
-	</div>
+		<a href="quiz.html"> <br><button>Take the quiz</button> </a>
 
-	<div class="align-middle" style="text-align: center;">
-
-		<a href="quiz.html"> <button> Take the quiz </button> </a>
-		<br><br> Number range <br><br>
-		<table>
+		<table align="center">
 			<tr>
-				<td style="text-align: right;"> from: <input type="number" id="fromInput" style="width: 100px;"> </td>
+				<td colspan=3><br>Number range</td>
+			</tr>
+			<tr>
+				<td style="text-align: right;"><br>from: <input type="number" id="fromInput" style="width: 100px;"> </td>
 				<td></td>
-				<td style="text-align: left;"> to: <input type="number" id="toInput" style="width: 100px;"> </td>
+				<td style="text-align: left;"><br> to: <input type="number" id="toInput" style="width: 100px;"> </td>
 			</tr>
 			<tr>
 				<td colspan=3> <br> <button onclick="processNumbers()"> Done </button> </td>
