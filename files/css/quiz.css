@@ -33,7 +33,6 @@ div.container{
 }
 
 div.flip-card{
-	height: 880px;
   position: absolute;
   top: 150px;
 	width: 530px;
@@ -63,7 +62,6 @@ div.flip-card-inner{
 div.polaroid{
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 25px;
 }
 
 td.answerCell{
@@ -77,5 +75,4 @@ td.answerCell:hover{
 
 td.questionCell{
 	column-span: 2;
-	height: 150px;
 }
