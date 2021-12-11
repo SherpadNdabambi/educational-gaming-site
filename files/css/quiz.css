@@ -64,6 +64,21 @@ div.polaroid{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+div.scoreboard{
+	background-color: black;
+	border-radius: 10px;
+	color: yellow;
+	font-family: "Codystar";
+	font-size: 40px;
+	margin: auto;
+	padding: 10px;
+	text-align: center;
+	text-shadow: 2px 2px 4px, -2px -2px 4px;
+	vertical-align: center;
+	-webkit-animation: glow 1.5s ease-in-out infinite alternate;
+	width: 200px;
+}
+
 td.answerCell{
 	text-align: left;
 }
@@ -75,4 +90,15 @@ td.answerCell:hover{
 
 td.questionCell{
 	column-span: 2;
+}
+
+@-webkit-keyframes glow {
+	from {
+		color: #646400;
+  }
+  
+  to {
+  	color: #FFFF3C;
+  	text-shadow: 2px 2px 4px, -2px -2px 4px;
+  }
 }
