@@ -8,7 +8,8 @@
 }
 
 body{
-	background-color: turquoise;
+	/*background-color: turquoise;*/
+	background-image: radial-gradient(circle, indigo, #000042);
 }
 
 button{
@@ -20,6 +21,15 @@ button{
 	font-size: 16px;
 	margin: 4px 2px;
 	padding: 20px;
+	text-align: center;
+}
+
+@font-face{
+	font-family: digital-7;
+	src: url("../fonts/digital-7 (mono).ttf");
+}
+
+h1{
 	text-align: center;
 }
 
