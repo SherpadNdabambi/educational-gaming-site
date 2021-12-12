@@ -76,6 +76,13 @@ div.scoreboard{
 	text-shadow: 2px 2px 4px, -2px -2px 4px;
 	vertical-align: center;
 	-webkit-animation: glow 1.5s ease-in-out infinite alternate;
+	font-family: digital-7;
+	font-size: 44px;
+	margin: auto;
+	padding-top: 10px;
+	padding-bottom: 22px;
+	text-align: center;
+	vertical-align: center;
 	width: 200px;
 }
 
