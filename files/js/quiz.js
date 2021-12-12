@@ -60,7 +60,8 @@ function replace(i){
 	function frame(){
 		if(position == startPos - 700){
 			clearInterval(id);
-			if(i < 7) replace(--i);
+			if(i > 0) replace(--i);
+			else startButton.style.display = "block";
 		}
 		else{
 			position -= 10;
@@ -80,7 +81,6 @@ function resetQuiz(){
 	usedCards = [];
 	homeButton.style.display = "block";
 	resetButton.style.display = "none";
-	startButton.style.display = "block";
 }
 
 function showResetButton(){
